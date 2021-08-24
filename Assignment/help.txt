@@ -1,0 +1,21 @@
+For more information on a specific command, type --help command-name
+-----Syntax of every command line : organizer command-name-----
+for
+Command name:
+task create  "title" priority "due_date"                Create a task
+task create  -t "title" -p priority -d "due_date"       Create a task with reference
+
+task ls                                                 List all tasks
+task ls --status concluded                              List concluded tasks
+task ls --status pending                                List pending tasks
+task ls --order priority asc                            ASC order by priority
+task ls --order due_date desc                           DESC order by due_date
+
+task rm id                                              Remove single task
+task rm id - - -                                        Remove multiple tasks{'-' : id}
+
+task conclude id                                        Conclude single tasks
+task conclude id - - -                                  Conclude Multiple tasks{'-' : id}
+
+task rewind id                                          Rewind a single task
+task rewind id - - -                                    Rewinds multiple tasks{'-' : id}
